@@ -28,10 +28,19 @@
 //   },
 // ];
 
-import { cart } from "../data/cart.js";
+import { cart, addTocart } from "../data/cart.js";
 import { products } from '../data/products.js';
 
 let productHtml = ''
+
+function cartQantity(){
+  let cartQunatity = 0;
+
+    cart.forEach((cartItem)=>{
+     cartQunatity+=cartItem.quantity; 
+    });
+    document.querySelector('.js-cart-quantity').innerHTML = cartQunatity;
+}
 
 products.forEach((product) => {
   productHtml+= ` <div class="product-container">
@@ -91,34 +100,9 @@ document.querySelectorAll('.js-add-to-cart').forEach((button)=>{
     const productId = (button.dataset.productId); //converted from Kebab case to camel case
 
     //checking if the product is alredy in the cart
+addTocart(productId);
 
-    let matchingItem;
-
-    cart.forEach((item) =>{
-      if(productId === item.productId){
-        matchingItem = item;
-      }
-    })
-    if(matchingItem){
-      matchingItem.quantity += 1;
-    }else{
-      cart.push({
-      productId: productId,
-      quantity: 1
-    })
-    }
-
-let cartQunatity = 0;
-
-    cart.forEach((item)=>{
-     cartQunatity+=item.quantity; 
-    });
-    document.querySelector('.js-cart-quantity').innerHTML = cartQunatity;
-    // cart.push({
-    //   productName: productName,
-    //   quantity: 1
-    // })
-    // console.log(cart)
+cartQantity();
   })
 
 });
