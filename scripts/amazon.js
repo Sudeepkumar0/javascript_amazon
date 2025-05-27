@@ -28,6 +28,7 @@
 //   },
 // ];
 
+import { cart } from "../data/cart";
 
 
 let productHtml = ''
