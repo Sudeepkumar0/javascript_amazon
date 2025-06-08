@@ -9,7 +9,7 @@ cart = [{
 {
   productId : "15b6fc6f-327a-4ec4-896f-486349e85a3d",
   quantity: 1,
-    deliveryOptionId: '1'
+  deliveryOptionId: '1'
 
 }];
 }
@@ -49,6 +49,21 @@ export function removeFromCart(productID){
   });
 
   cart = newCart;
+
+  saveToStorage();
+}
+
+
+export function updateDeliveryOption(productID, deliveryOptionId) {
+  let matchingItem;
+
+  cart.forEach((cartItem) => {
+    if (productID === cartItem.productId) {
+      matchingItem = cartItem;
+    }
+  });
+
+  matchingItem.deliveryOptionId = deliveryOptionId;
 
   saveToStorage();
 }
