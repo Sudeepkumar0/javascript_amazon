@@ -1,6 +1,7 @@
 import { cart } from "../../data/cart.js";
 import { deliveryOption, deliveryoptions } from "../../data/deliveryoptions.js";
 import { getProduct } from "../../data/products.js";
+import { countCheckout } from "../../data/cart.js";
 
 //we take the datails of the prouct
 export function renderPaymentSummary() {
@@ -23,7 +24,7 @@ export function renderPaymentSummary() {
           </div>
 
           <div class="payment-summary-row">
-            <div>Items (3):</div>
+            <div>items ${countCheckout()}</div>
             <div class="payment-summary-money">$${(productPriceCents/100).toFixed(2)}</div>
           </div>
 
