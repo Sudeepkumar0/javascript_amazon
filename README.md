@@ -37,7 +37,7 @@ Live Project
 ![image](https://github.com/user-attachments/assets/e3018930-c877-4959-82ad-f9ec81857ac1)
 
 ### Checkout Page
-![Checkout](https://raw.githubusercontent.com/Sudeepkumar0/javascript_amazon/main/screenshots/checkout.png)
+![image](https://github.com/user-attachments/assets/d2365453-51b7-441a-b813-c7169659d373)
 
 ---
 
@@ -50,23 +50,12 @@ Live Project
 
 ---
 
-## 🚀 Improvements Coming Soon
-
-- Option to remove products from cart
-- Quantity selector during checkout
-- Product filtering and sorting
-- Backend integration using Node.js + MongoDB
-
----
-
 ## 📜 License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).  
 You are free to use, modify, and distribute this code with credit.
 
 ---
-
-## 👨‍💻 Developer
 
 **Sudeep Kumar**  
 [GitHub Profile](https://github.com/Sudeepkumar0)
