@@ -50,12 +50,7 @@ Live Project
 
 ---
 
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).  
 You are free to use, modify, and distribute this code with credit.
-
----
 
 **Sudeep Kumar**  
 [GitHub Profile](https://github.com/Sudeepkumar0)
